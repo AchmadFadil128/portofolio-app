@@ -29,8 +29,7 @@ export default function HomePage() {
         {/* Testimonial */}
         <div className="col-span-2 bg-gray-800 rounded-2xl p-6">
           <blockquote className="text-gray-300 italic text-xl mb-4">
-            "Jennifer's work is exceptional - she combines efficiency with
-            creative problem solving"
+            &ldquo;Jennifer&rsquo;s work is exceptional – she combines efficiency with creative problem solving&rdquo;
           </blockquote>
           <p className="text-gray-400 font-medium">
             Patrick Duru
@@ -73,7 +72,7 @@ export default function HomePage() {
         >
           <div className="h-full flex flex-col justify-between">
             <h3 className="text-xl font-semibold">Contact</h3>
-            <p className="text-gray-400">Let's collaborate</p>
+            <p className="text-gray-400">Let&apos;s collaborate</p>
           </div>
         </a>
 

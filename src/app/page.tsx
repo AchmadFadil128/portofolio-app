@@ -1,4 +1,5 @@
 // src/app/page.tsx
+import Image from "next/image";
 
 export const metadata = {
   title: 'Profile Achmad Fadil Nur Ramdhani',
@@ -19,9 +20,11 @@ export default function HomePage() {
         >
           <div className="h-full flex flex-col justify-between">
             <div className="mb-4">
-              <img
+              <Image
                 src="/profilefoto.jpg"
-                alt="Foto Achmad Fadil Nur Ramdhani"
+                alt="Foto Profil"
+                width={300} // bisa kamu sesuaikan
+                height={300}
                 className="w-70 h-70 rounded-full object-cover mb-4 border-4 border-gray-700"
               />
               <h2 className="text-2xl font-semibold">Achmad Fadil Nur Ramdhani</h2>
@@ -42,7 +45,7 @@ export default function HomePage() {
             &ldquo;Ingatlah, hanya dengan mengingat Allah hati menjadi
             tenteram.&rdquo;
             <br />
-            <span className="text-gray-500 text-sm">– QS Ar-Ra'd: 28</span>
+            <span className="text-gray-500 text-sm">– QS Ar-Ra&apos;d: 28</span>
           </blockquote>
           <p className="text-gray-400 font-medium">Achmad Fadil Nur Ramdhani</p>
         </div>
@@ -68,9 +71,11 @@ export default function HomePage() {
             <h3 className="text-2xl font-semibold mb-4">Forum Kesiswaan</h3>
             
             {/* Gambar proyek */}
-            <img
+            <Image
               src="/forum-kesiswaan.jpg"
               alt="Tampilan Forum Kesiswaan"
+              width={300} // bisa kamu sesuaikan
+              height={300}
               className="w-full h-full object-cover rounded-lg mb-4 border-2 border-gray-600"
             />
 

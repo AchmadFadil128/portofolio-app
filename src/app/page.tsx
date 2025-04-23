@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <main className="bg-gray-900 text-gray-100 min-h-screen p-8">
       <h1 className="text-4xl font-bold text-center mb-8">
-        Achmad Fadil Nur Ramdhani
+        Website Portofolio
       </h1>
 
       <div className="max-w-7xl mx-auto grid grid-cols-4 auto-rows-[minmax(200px,auto)] gap-6">
@@ -18,52 +18,68 @@ export default function HomePage() {
           className="col-span-2 row-span-2 bg-gray-800 rounded-2xl p-6 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
         >
           <div className="h-full flex flex-col justify-between">
-            <h2 className="text-2xl font-semibold mb-4">Jennifer Chuks</h2>
+            <div className="mb-4">
+              <img
+                src="/profilefoto.jpg"
+                alt="Foto Achmad Fadil Nur Ramdhani"
+                className="w-70 h-70 rounded-full object-cover mb-4 border-4 border-gray-700"
+              />
+              <h2 className="text-2xl font-semibold">Achmad Fadil Nur Ramdhani</h2>
+            </div>
             <p className="text-gray-400 text-lg leading-relaxed">
-              Transform complex brand challenges into intuitive digital
-              experiences
+              Siswa biasa SIJA yang ingin menjadi fullstack developer
             </p>
           </div>
         </a>
 
-        {/* Testimonial */}
+
+        {/* Quotes */}
         <div className="col-span-2 bg-gray-800 rounded-2xl p-6">
           <blockquote className="text-gray-300 italic text-xl mb-4">
-            &ldquo;Jennifer&rsquo;s work is exceptional – she combines efficiency with creative problem solving&rdquo;
+            &ldquo;Al-Quran adalah alasan saya agar tidak stress saat debugging&rdquo;
           </blockquote>
-          <p className="text-gray-400 font-medium">
-            Patrick Duru
+          <blockquote className="text-gray-300 italic text-lg mb-4">
+            &ldquo;Ingatlah, hanya dengan mengingat Allah hati menjadi
+            tenteram.&rdquo;
             <br />
-            <span className="text-gray-500 text-sm">CEO ©Meritox</span>
-          </p>
+            <span className="text-gray-500 text-sm">– QS Ar-Ra'd: 28</span>
+          </blockquote>
+          <p className="text-gray-400 font-medium">Achmad Fadil Nur Ramdhani</p>
         </div>
 
         {/* Services */}
         <a
-          href="/services"
+          href="/skills"
           className="bg-gray-800 rounded-2xl p-6 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
         >
           <div className="h-full flex flex-col justify-between">
-            <h3 className="text-xl font-semibold mb-2">U/LIX Design</h3>
-            <p className="text-gray-400">User-centered interface solutions</p>
+            <h3 className="text-xl font-semibold mb-2">UI/UX Design</h3>
+            <h3 className="text-xl font-semibold mb-2">IT Support</h3>
+            <h3 className="text-xl font-semibold mb-2">MC</h3>
           </div>
         </a>
 
         {/* Project Showcase */}
         <a
-          href="/projects"
+          href="/ongoing-projects"
           className="row-span-2 bg-gray-700 rounded-2xl p-6 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
         >
           <div className="h-full flex flex-col justify-between">
-            <h3 className="text-2xl font-semibold mb-4">
-              Food Delivery Ecosystem
-            </h3>
+            <h3 className="text-2xl font-semibold mb-4">Forum Kesiswaan</h3>
+            
+            {/* Gambar proyek */}
+            <img
+              src="/forum-kesiswaan.jpg"
+              alt="Tampilan Forum Kesiswaan"
+              className="w-full h-full object-cover rounded-lg mb-4 border-2 border-gray-600"
+            />
+
             <p className="text-gray-400 text-lg leading-relaxed">
-              Revolutionizing last-mile delivery through intuitive interface
-              design
+              Membantu Kesiswaan di sekolah-sekolah Kota Cimahi dalam pengelolaan dokumentasi kegiatan.
             </p>
           </div>
         </a>
+
 
         {/* Contact */}
         <a
@@ -77,12 +93,18 @@ export default function HomePage() {
         </a>
 
         {/* Stats */}
-        <div className="col-span-2 bg-gray-800 rounded-2xl p-6 flex items-center justify-center">
+
+        <a
+          href="/projects"
+          className="col-span-2 bg-gray-800 rounded-2xl p-6 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
+        >
+          <div className="h-full flex flex-col justify-between">
           <div className="text-center">
-            <div className="text-4xl font-bold mb-2">150+</div>
+            <div className="text-4xl font-bold mb-2 mt-5">150+</div>
             <p className="text-gray-400">Projects Completed</p>
           </div>
-        </div>
+          </div>
+        </a>
       </div>
     </main>
   );

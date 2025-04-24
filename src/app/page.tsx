@@ -1,16 +1,32 @@
 // src/app/page.tsx
 import Image from "next/image";
 
+// src/app/page.tsx
 export const metadata = {
-  title: 'Profile Achmad Fadil Nur Ramdhani',
+  title: "Achmad Fadil | Fullstack Developer",
+  description: "Portofolio dan projek dari Achmad Fadil Nur Ramdhani, siswa SIJA yang ingin jadi fullstack developer.",
+  keywords: ["Achmad Fadil","Achmad Fadil Nur Ramdhani","Portofolio", "Fullstack Developer", "SIJA", "Projek Sekolah","SMK Negeri 1 Cimahi"],
+  openGraph: {
+    title: "Achmad Fadil | Fullstack Developer",
+    description: "Projek dan karya Achmad Fadil dari Cimahi.",
+    url: "https://achmadfadil128.my.id",
+    siteName: "Portofolio Achmad Fadil",
+    images: [
+      {
+        url: "/profilefoto.jpg", // sediakan gambar ini
+        width: 1200,
+        height: 630,
+        alt: "Preview Portofolio Achmad Fadil",
+      },
+    ],
+    type: "website",
+  },
 };
+
 
 export default function HomePage() {
   return (
     <main className="bg-gray-900 text-gray-100 min-h-screen p-8">
-      <h1 className="text-4xl font-bold text-center mb-8">
-        Website Portofolio
-      </h1>
 
       <div className="max-w-7xl mx-auto grid grid-cols-4 auto-rows-[minmax(200px,auto)] gap-6">
         {/* Profile Section */}

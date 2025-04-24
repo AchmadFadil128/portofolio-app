@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://achmadfadil128.my.id/sitemap.xml

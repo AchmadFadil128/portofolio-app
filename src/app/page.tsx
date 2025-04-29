@@ -26,7 +26,7 @@ export const metadata = {
 
 export default function HomePage() {
   return (
-    <main className="bg-gray-900 text-gray-100 min-h-screen p-8">
+    <main className="bg-gray-900 text-gray-100 min-h-screen p-8 grid place-items-center">
 
       <div className="max-w-7xl mx-auto grid grid-cols-4 auto-rows-[minmax(200px,auto)] gap-6">
         {/* Profile Section */}
@@ -119,9 +119,9 @@ export default function HomePage() {
           href="/projects"
           className="col-span-2 bg-gray-800 rounded-2xl p-6 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
         >
-          <div className="h-full flex flex-col justify-between">
+          <div className="h-full grid place-items-center">
           <div className="text-center">
-            <div className="text-4xl font-bold mb-2 mt-5">150+</div>
+            <div className="text-4xl font-bold justify-center">150+</div>
             <p className="text-gray-400">Projects Completed</p>
           </div>
           </div>

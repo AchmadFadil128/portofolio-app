@@ -27,19 +27,46 @@ export const metadata = {
 export default function HomePage() {
   return (
     <main className="bg-gray-900 text-gray-100 min-h-screen p-8 grid place-items-center">
-
       <div className="max-w-7xl mx-auto grid grid-cols-4 auto-rows-[minmax(200px,auto)] gap-6">
         {/* Profile Section */}
         <a
-          href="/profile"
-          className="col-span-2 row-span-2 bg-gray-800 rounded-2xl p-6 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
+        href="/profile"
+        className="
+          group relative overflow-visible
+          col-span-2 row-span-2
+          transition-all duration-300
+          hover:-translate-y-2 hover:shadow-xl
+        "
         >
+
+        <div
+            className="
+              absolute inset-0
+              bg-gray-700 rounded-2xl p-6
+              w-[706px] 
+              z-0
+              transition-all duration-300
+            "
+          >
+          </div>
+
+          {/* Real Card */}
+
+        <div
+          className="
+            relative z-10
+            bg-gray-800 rounded-2xl p-6
+            transition-all duration-300
+            w-[706px] group-hover:w-[666px]
+          "
+        >
+          {/* Isi card */}
           <div className="h-full flex flex-col justify-between">
             <div className="mb-4">
               <Image
                 src="/profilefoto.jpg"
                 alt="Foto Profil"
-                width={300} // bisa kamu sesuaikan
+                width={300}
                 height={300}
                 className="w-70 h-70 rounded-full object-cover mb-4 border-4 border-gray-700"
               />
@@ -49,7 +76,9 @@ export default function HomePage() {
               Siswa biasa SIJA yang ingin menjadi fullstack developer
             </p>
           </div>
-        </a>
+        </div>
+      </a>
+
 
 
         {/* Quotes */}
